@@ -1,6 +1,6 @@
-﻿using Design_Patterns.Tools;
+﻿using DesignPatterns.Tools;
 
-namespace Design_Patterns.Bridge
+namespace DesignPatterns.Structural.Bridge
 {
     // رابط برای ویژگی‌های فرم
     public interface DrawingAPI

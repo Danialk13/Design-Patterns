@@ -1,8 +1,7 @@
-﻿using Design_Patterns.Bridge;
-using Design_Patterns.Bridge2;
-using Design_Patterns.Tools;
+﻿using DesignPatterns.Structural.Bridge;
+using DesignPatterns.Tools;
 
-namespace Design_Patterns
+namespace DesignPatterns
 {
     public partial class DesignPatterns : Form
     {
@@ -116,54 +115,53 @@ namespace Design_Patterns
         {
             // Sample 1
 
-            //// استفاده از DrawingAPI برای رسم اشکال در کنسول
-            //DrawingAPI consoleAPI = new ConsoleDrawingAPI();
+            // استفاده از DrawingAPI برای رسم اشکال در کنسول
+            DrawingAPI consoleAPI = new ConsoleDrawingAPI();
 
-            //Shape circle = new Circle(5, 10, 10, consoleAPI);
-            //circle.Draw();
+            Shape circle = new Circle(5, 10, 10, consoleAPI);
+            circle.Draw();
 
-            //Shape rectangle = new Bridge.Rectangle(6, 4, 15, 20, consoleAPI);
-            //rectangle.Draw();
+            Shape rectangle = new Structural.Bridge.Rectangle(6, 4, 15, 20, consoleAPI);
+            rectangle.Draw();
 
-            //// استفاده از DrawingAPI برای رسم اشکال در محیط گرافیکی
-            //DrawingAPI graphicAPI = new GraphicDrawingAPI();
+            // استفاده از DrawingAPI برای رسم اشکال در محیط گرافیکی
+            DrawingAPI graphicAPI = new GraphicDrawingAPI();
 
-            //Shape circleGraphic = new Circle(8, 30, 40, graphicAPI);
-            //circleGraphic.Draw();
+            Shape circleGraphic = new Circle(8, 30, 40, graphicAPI);
+            circleGraphic.Draw();
 
-            //Shape rectangleGraphic = new Bridge.Rectangle(7, 3, 50, 60, graphicAPI);
-            //rectangleGraphic.Draw();
+            Shape rectangleGraphic = new Structural.Bridge.Rectangle(7, 3, 50, 60, graphicAPI);
+            rectangleGraphic.Draw();
 
             // *********************************************************************
             // Sample 2
 
+            //Client client = new Client();
 
-            Client client = new Client();
+            //Abstraction abstraction;
+            //// The client code should be able to work with any pre-configured
+            //// abstraction-implementation combination.
+            //abstraction = new Abstraction(new ConcreteImplementationA());
+            //client.ClientCode(abstraction);
 
-            Abstraction abstraction;
-            // The client code should be able to work with any pre-configured
-            // abstraction-implementation combination.
-            abstraction = new Abstraction(new ConcreteImplementationA());
-            client.ClientCode(abstraction);
+            //LocalConsole.WriteLine();
 
-            LocalConsole.WriteLine();
-
-            abstraction = new ExtendedAbstraction(new ConcreteImplementationB());
-            client.ClientCode(abstraction);
+            //abstraction = new ExtendedAbstraction(new ConcreteImplementationB());
+            //client.ClientCode(abstraction);
         }
 
         private void btnBridgeInfo_Click(object sender, EventArgs e)
         {
             LocalConsole.ClearInfo();
-            LocalConsole.WriteLineInfo("Bridge Design Pattern:");
+            LocalConsole.WriteLineInfo("🔷 Bridge Design Pattern:");
             LocalConsole.WriteLineInfo("");
             LocalConsole.WriteLineInfo("✅ میزان استفاده : متوسط");
             LocalConsole.WriteLineInfo("✅ جداسازی یک مفهوم از پیاده‌سازی آن");
             LocalConsole.WriteLineInfo("✅ امکان مدیریت ساختار سیستم در برابر تغییرات و انعطاف ‌پذیری");
             LocalConsole.WriteLineInfo("");
-            LocalConsole.WriteLineInfo("References:");
-            LocalConsole.WriteLineInfo("https://holosen.net/bridge-design-pattern/");
-            LocalConsole.WriteLineInfo("https://refactoring.guru/design-patterns/bridge/csharp/example#:~:text=Bridge%20is%20a%20structural%20design,the%20second%20hierarchy%20(Implementation).");
+            LocalConsole.WriteLineInfo("🔗 References:");
+            LocalConsole.WriteLineInfo("⚫ https://holosen.net/bridge-design-pattern/");
+            LocalConsole.WriteLineInfo("⚫ https://refactoring.guru/design-patterns/bridge/csharp/example#:~:text=Bridge%20is%20a%20structural%20design,the%20second%20hierarchy%20(Implementation).");
         }
 
         private void btnDecorator_Click(object sender, EventArgs e)

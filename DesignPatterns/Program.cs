@@ -1,4 +1,4 @@
-namespace Design_Patterns
+namespace DesignPatterns
 {
     internal static class Program
     {

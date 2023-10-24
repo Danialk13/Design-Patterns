@@ -1,10 +1,10 @@
-﻿namespace Design_Patterns.Tools
+﻿namespace DesignPatterns.Tools
 {
     public static class LocalConsole
     {
         public static void Clear()
         {
-            Program.form.rtbOutput.Text = "(c) ParmisIT. all rights reserved." + Environment.NewLine + Environment.NewLine;
+            Program.form.rtbOutput.Text = "©️ ParmisIT. all rights reserved." + Environment.NewLine + Environment.NewLine;
         }
 
         public static void Write(string text)
