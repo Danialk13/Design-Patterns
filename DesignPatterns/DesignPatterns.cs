@@ -1,4 +1,5 @@
-﻿using DesignPatterns.Structural.Bridge;
+﻿using DesignPatterns.Structural.Adapter;
+using DesignPatterns.Structural.Bridge;
 using DesignPatterns.Tools;
 
 namespace DesignPatterns
@@ -73,12 +74,28 @@ namespace DesignPatterns
 
         private void btnAdapter_Click(object sender, EventArgs e)
         {
-           
+            //Adaptee adaptee = new Adaptee();
+            //LocalConsole.WriteLine(adaptee.SpecificRequest());
+
+            Adaptee adaptee = new Adaptee();
+            // استفاده از Adapter
+            ITarget target = new Adapter(adaptee);
+            target.Request();
         }
 
         private void btnAdapterInfo_Click(object sender, EventArgs e)
         {
-           
+            LocalConsole.ClearInfo();
+            LocalConsole.WriteLineInfo("🔷 Adapter Design Pattern:");
+            LocalConsole.WriteLineInfo("");
+            LocalConsole.WriteLineInfo("✅ میزان استفاده : متوسط رو به بالا");
+            LocalConsole.WriteLineInfo("✅ یک رابط موجود را به یک رابط دیگر تبدیل کنید تا کلاس‌ها یا اشیاء با یک رابط غیرمطابق به یکدیگر متصل شوند.");
+            LocalConsole.WriteLineInfo("✅ آداپته کردن کد هایی با ساختار متفاوت از کد های فعلی.");
+            LocalConsole.WriteLineInfo("✅ بهترین نمونه این دیزاین پترن ریپازیتوری است.");
+            LocalConsole.WriteLineInfo("");
+            LocalConsole.WriteLineInfo("🔗 References:");
+            LocalConsole.WriteLineInfo("⚫ https://holosen.net/adapter-design-pattern/");
+            LocalConsole.WriteLineInfo("⚫ https://refactoring.guru/design-patterns/adapter/csharp/example#example-0");
         }
 
         private void btnComposite_Click(object sender, EventArgs e)
@@ -156,12 +173,12 @@ namespace DesignPatterns
             LocalConsole.WriteLineInfo("🔷 Bridge Design Pattern:");
             LocalConsole.WriteLineInfo("");
             LocalConsole.WriteLineInfo("✅ میزان استفاده : متوسط");
-            LocalConsole.WriteLineInfo("✅ جداسازی یک مفهوم از پیاده‌سازی آن");
-            LocalConsole.WriteLineInfo("✅ امکان مدیریت ساختار سیستم در برابر تغییرات و انعطاف ‌پذیری");
+            LocalConsole.WriteLineInfo("✅ جداسازی یک مفهوم از پیاده‌سازی آن.");
+            LocalConsole.WriteLineInfo("✅ امکان مدیریت ساختار سیستم در برابر تغییرات و انعطاف ‌پذیری.");
             LocalConsole.WriteLineInfo("");
             LocalConsole.WriteLineInfo("🔗 References:");
             LocalConsole.WriteLineInfo("⚫ https://holosen.net/bridge-design-pattern/");
-            LocalConsole.WriteLineInfo("⚫ https://refactoring.guru/design-patterns/bridge/csharp/example#:~:text=Bridge%20is%20a%20structural%20design,the%20second%20hierarchy%20(Implementation).");
+            LocalConsole.WriteLineInfo("⚫ https://refactoring.guru/design-patterns/bridge/csharp/example");
         }
 
         private void btnDecorator_Click(object sender, EventArgs e)
