@@ -110,7 +110,8 @@
             // 
             // btnPrototypeInfo
             // 
-            this.btnPrototypeInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnPrototypeInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnPrototypeInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPrototypeInfo.Location = new System.Drawing.Point(481, 81);
             this.btnPrototypeInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnPrototypeInfo.Name = "btnPrototypeInfo";
@@ -131,7 +132,8 @@
             // 
             // btnAbstractFactoryInfo
             // 
-            this.btnAbstractFactoryInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnAbstractFactoryInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnAbstractFactoryInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAbstractFactoryInfo.Location = new System.Drawing.Point(201, 482);
             this.btnAbstractFactoryInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnAbstractFactoryInfo.Name = "btnAbstractFactoryInfo";
@@ -152,7 +154,8 @@
             // 
             // btnSingletonInfo
             // 
-            this.btnSingletonInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnSingletonInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnSingletonInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSingletonInfo.Location = new System.Drawing.Point(201, 348);
             this.btnSingletonInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnSingletonInfo.Name = "btnSingletonInfo";
@@ -173,7 +176,8 @@
             // 
             // btnBuilderInfo
             // 
-            this.btnBuilderInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnBuilderInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnBuilderInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuilderInfo.Location = new System.Drawing.Point(201, 213);
             this.btnBuilderInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnBuilderInfo.Name = "btnBuilderInfo";
@@ -196,7 +200,7 @@
             // 
             this.btnFactoryMethodInfo.BackColor = System.Drawing.Color.Transparent;
             this.btnFactoryMethodInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
-            this.btnFactoryMethodInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFactoryMethodInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFactoryMethodInfo.Location = new System.Drawing.Point(201, 81);
             this.btnFactoryMethodInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnFactoryMethodInfo.Name = "btnFactoryMethodInfo";
@@ -243,7 +247,8 @@
             // 
             // btnFlyweightInfo
             // 
-            this.btnFlyweightInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnFlyweightInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnFlyweightInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFlyweightInfo.Location = new System.Drawing.Point(481, 348);
             this.btnFlyweightInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnFlyweightInfo.Name = "btnFlyweightInfo";
@@ -263,7 +268,8 @@
             // 
             // btnDecoratorInfo
             // 
-            this.btnDecoratorInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnDecoratorInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnDecoratorInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDecoratorInfo.Location = new System.Drawing.Point(481, 213);
             this.btnDecoratorInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnDecoratorInfo.Name = "btnDecoratorInfo";
@@ -283,7 +289,8 @@
             // 
             // btnBridgeInfo
             // 
-            this.btnBridgeInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnBridgeInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnBridgeInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBridgeInfo.Location = new System.Drawing.Point(481, 81);
             this.btnBridgeInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnBridgeInfo.Name = "btnBridgeInfo";
@@ -306,7 +313,8 @@
             // 
             // btnProxyInfo
             // 
-            this.btnProxyInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnProxyInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnProxyInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnProxyInfo.Location = new System.Drawing.Point(201, 482);
             this.btnProxyInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnProxyInfo.Name = "btnProxyInfo";
@@ -327,7 +335,8 @@
             // 
             // btnFacadeInfo
             // 
-            this.btnFacadeInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnFacadeInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnFacadeInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnFacadeInfo.Location = new System.Drawing.Point(201, 348);
             this.btnFacadeInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnFacadeInfo.Name = "btnFacadeInfo";
@@ -348,7 +357,8 @@
             // 
             // btnCompositeInfo
             // 
-            this.btnCompositeInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnCompositeInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnCompositeInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCompositeInfo.Location = new System.Drawing.Point(201, 213);
             this.btnCompositeInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnCompositeInfo.Name = "btnCompositeInfo";
@@ -368,7 +378,8 @@
             // 
             // btnAdapterInfo
             // 
-            this.btnAdapterInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnAdapterInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnAdapterInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAdapterInfo.Location = new System.Drawing.Point(201, 81);
             this.btnAdapterInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnAdapterInfo.Name = "btnAdapterInfo";
@@ -425,7 +436,8 @@
             // 
             // btnStrategyInfo
             // 
-            this.btnStrategyInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnStrategyInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnStrategyInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStrategyInfo.Location = new System.Drawing.Point(763, 213);
             this.btnStrategyInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnStrategyInfo.Name = "btnStrategyInfo";
@@ -446,7 +458,8 @@
             // 
             // btnMediatorInfo
             // 
-            this.btnMediatorInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnMediatorInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnMediatorInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMediatorInfo.Location = new System.Drawing.Point(763, 81);
             this.btnMediatorInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnMediatorInfo.Name = "btnMediatorInfo";
@@ -467,7 +480,8 @@
             // 
             // btnStateInfo
             // 
-            this.btnStateInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnStateInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnStateInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnStateInfo.Location = new System.Drawing.Point(481, 482);
             this.btnStateInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnStateInfo.Name = "btnStateInfo";
@@ -488,7 +502,8 @@
             // 
             // btnIteratorInfo
             // 
-            this.btnIteratorInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnIteratorInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnIteratorInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIteratorInfo.Location = new System.Drawing.Point(481, 348);
             this.btnIteratorInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnIteratorInfo.Name = "btnIteratorInfo";
@@ -509,7 +524,8 @@
             // 
             // btnVisitorInfo
             // 
-            this.btnVisitorInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnVisitorInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnVisitorInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnVisitorInfo.Location = new System.Drawing.Point(481, 213);
             this.btnVisitorInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnVisitorInfo.Name = "btnVisitorInfo";
@@ -529,7 +545,8 @@
             // 
             // btnObserveInfo
             // 
-            this.btnObserveInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnObserveInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnObserveInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnObserveInfo.Location = new System.Drawing.Point(481, 81);
             this.btnObserveInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnObserveInfo.Name = "btnObserveInfo";
@@ -549,7 +566,8 @@
             // 
             // btnCommandInfo
             // 
-            this.btnCommandInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnCommandInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnCommandInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCommandInfo.Location = new System.Drawing.Point(201, 482);
             this.btnCommandInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnCommandInfo.Name = "btnCommandInfo";
@@ -570,7 +588,8 @@
             // 
             // btnTemplateMethodInfo
             // 
-            this.btnTemplateMethodInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnTemplateMethodInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnTemplateMethodInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTemplateMethodInfo.Location = new System.Drawing.Point(201, 348);
             this.btnTemplateMethodInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnTemplateMethodInfo.Name = "btnTemplateMethodInfo";
@@ -590,7 +609,8 @@
             // 
             // btnMementoInfo
             // 
-            this.btnMementoInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnMementoInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnMementoInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMementoInfo.Location = new System.Drawing.Point(201, 213);
             this.btnMementoInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnMementoInfo.Name = "btnMementoInfo";
@@ -610,7 +630,8 @@
             // 
             // btnChainOfResponsibilityInfo
             // 
-            this.btnChainOfResponsibilityInfo.Image = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnChainOfResponsibilityInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
+            this.btnChainOfResponsibilityInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnChainOfResponsibilityInfo.Location = new System.Drawing.Point(201, 81);
             this.btnChainOfResponsibilityInfo.Margin = new System.Windows.Forms.Padding(6);
             this.btnChainOfResponsibilityInfo.Name = "btnChainOfResponsibilityInfo";
