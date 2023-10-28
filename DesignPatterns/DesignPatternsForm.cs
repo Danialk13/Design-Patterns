@@ -6,9 +6,9 @@ using DesignPatterns.Tools;
 
 namespace DesignPatterns
 {
-    public partial class DesignPatterns : Form
+    public partial class DesignPatternsForm : Form
     {
-        public DesignPatterns()
+        public DesignPatternsForm()
         {
             InitializeComponent();
         }

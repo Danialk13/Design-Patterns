@@ -2,7 +2,7 @@ namespace DesignPatterns
 {
     internal static class Program
     {
-        public static DesignPatterns form = new DesignPatterns();
+        public static DesignPatternsForm form = new DesignPatternsForm();
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns
 {
-    partial class DesignPatterns
+    partial class DesignPatternsForm
     {
         /// <summary>
         ///  Required designer variable.
