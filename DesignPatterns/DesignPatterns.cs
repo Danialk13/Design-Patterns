@@ -1,4 +1,6 @@
-﻿using DesignPatterns.Structural.Adapter;
+﻿using DesignPatterns.Behavioral.Observe;
+using DesignPatterns.Behavioral.Visitor;
+using DesignPatterns.Structural.Adapter;
 using DesignPatterns.Structural.Bridge;
 using DesignPatterns.Tools;
 
@@ -247,22 +249,106 @@ namespace DesignPatterns
 
         private void btnObserve_Click(object sender, EventArgs e)
         {
+            // Sample 1
 
+            // The client code.
+            var subject = new Subject();
+            var observerA = new ConcreteObserverA();
+            subject.Attach(observerA);
+
+            var observerB = new ConcreteObserverB();
+            subject.Attach(observerB);
+
+            subject.SomeBusinessLogic();
+            subject.SomeBusinessLogic();
+
+            subject.Detach(observerB);
+
+            subject.SomeBusinessLogic();
+
+            // *********************************************************************
+            // Sample 2
+
+            //BankAccount account = new BankAccount();
+
+            //IObserver2 logger1 = new TransactionLogger("Logger 1");
+            //IObserver2 logger2 = new TransactionLogger("Logger 2");
+
+            //account.AddObserver(logger1);
+            //account.AddObserver(logger2);
+
+            //account.AddTransaction(100);
+            //account.AddTransaction(-50);
+
+            //account.RemoveObserver(logger1);
+
+            //account.AddTransaction(200);
         }
 
         private void btnObserveInfo_Click(object sender, EventArgs e)
         {
-
+            LocalConsole.ClearInfo();
+            LocalConsole.WriteLineInfo("🔷 Observe Design Pattern:");
+            LocalConsole.WriteLineInfo("");
+            LocalConsole.WriteLineInfo("✅ میزان استفاده : زیاد");
+            LocalConsole.WriteLineInfo("✅ وقتی یک شیء حالت خود را تغییر می دهد، همه وابستگان آن به طور خودکار مطلع و به روز می شوند.");
+            LocalConsole.WriteLineInfo("✅ مناسب برای لاگ کردن یا مواقعی که میخواهیم با تغییرات در آبجکت خود یک اتفاقاتی رخ بدهد.");
+            LocalConsole.WriteLineInfo("");
+            LocalConsole.WriteLineInfo("🔗 References:");
+            LocalConsole.WriteLineInfo("⚫ https://holosen.net/observer-design-pattern/");
+            LocalConsole.WriteLineInfo("⚫ https://refactoring.guru/design-patterns/observer/csharp/example#example-0");
         }
 
         private void btnVisitor_Click(object sender, EventArgs e)
         {
+            // Sample 1
 
+            List<IComponent> components = new List<IComponent>
+            {
+                new ConcreteComponentA(),
+                new ConcreteComponentB()
+            };
+
+            LocalConsole.WriteLine("The client code works with all visitors via the base Visitor interface:");
+            var visitor1 = new ConcreteVisitor1();
+            VisitorClient.ClientCode(components, visitor1);
+
+            LocalConsole.WriteLine();
+
+            LocalConsole.WriteLine("It allows the same client code to work with different types of visitors:");
+            var visitor2 = new ConcreteVisitor2();
+            VisitorClient.ClientCode(components, visitor2);
+
+            // *********************************************************************
+            // Sample 2
+
+            //List<Behavioral.Visitor.BankAccount> accounts = new List<Behavioral.Visitor.BankAccount>
+            //{
+            //    new SavingsAccount(),
+            //    new CheckingAccount(),
+            //    new InvestmentAccount()
+            //};
+
+            //TaxVisitor taxVisitor = new TaxVisitor();
+
+            //foreach (var account in accounts)
+            //{
+            //    account.Accept(taxVisitor);
+            //}
         }
 
         private void btnVisitorInfo_Click(object sender, EventArgs e)
         {
-
+            LocalConsole.ClearInfo();
+            LocalConsole.WriteLineInfo("🔷 Visitor Design Pattern:");
+            LocalConsole.WriteLineInfo("");
+            LocalConsole.WriteLineInfo("✅ میزان استفاده : کم");
+            LocalConsole.WriteLineInfo("✅ این الگو به شما امکان می دهد بدون تغییر کلاس عناصری که بر روی آنها کار می کند ، یک عملیات جدید تعریف کنید.");
+            LocalConsole.WriteLineInfo("✅ برای اعمال یک عملکرد خاص بر روی یک مجموعه از اشیاء متفاوت استفاده می‌شود بدون اینکه به کلاس‌های این اشیاء دسترسی داشته باشد یا بدون اینکه این اشیاء را تغییر دهد.");
+            LocalConsole.WriteLineInfo("");
+            LocalConsole.WriteLineInfo("🔗 References:");
+            LocalConsole.WriteLineInfo("⚫ https://holosen.net/visitor-design-pattern/");
+            LocalConsole.WriteLineInfo("⚫ https://refactoring.guru/design-patterns/visitor/csharp/example#example-0");
         }
 
         private void btnIterator_Click(object sender, EventArgs e)

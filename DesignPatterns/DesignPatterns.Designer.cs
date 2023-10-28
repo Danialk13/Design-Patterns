@@ -110,13 +110,14 @@
             // 
             // btnPrototypeInfo
             // 
+            this.btnPrototypeInfo.BackColor = System.Drawing.Color.Transparent;
             this.btnPrototypeInfo.BackgroundImage = global::DesignPatterns.Properties.Resources.Info_24;
             this.btnPrototypeInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPrototypeInfo.Location = new System.Drawing.Point(259, 38);
             this.btnPrototypeInfo.Name = "btnPrototypeInfo";
             this.btnPrototypeInfo.Size = new System.Drawing.Size(34, 32);
             this.btnPrototypeInfo.TabIndex = 9;
-            this.btnPrototypeInfo.UseVisualStyleBackColor = true;
+            this.btnPrototypeInfo.UseVisualStyleBackColor = false;
             // 
             // btnPrototype
             // 
@@ -495,15 +496,18 @@
             this.btnVisitorInfo.Size = new System.Drawing.Size(34, 32);
             this.btnVisitorInfo.TabIndex = 11;
             this.btnVisitorInfo.UseVisualStyleBackColor = true;
+            this.btnVisitorInfo.Click += new System.EventHandler(this.btnVisitorInfo_Click);
             // 
             // btnVisitor
             // 
+            this.btnVisitor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnVisitor.Location = new System.Drawing.Point(168, 94);
             this.btnVisitor.Name = "btnVisitor";
             this.btnVisitor.Size = new System.Drawing.Size(85, 45);
             this.btnVisitor.TabIndex = 10;
             this.btnVisitor.Text = "Visitor";
-            this.btnVisitor.UseVisualStyleBackColor = true;
+            this.btnVisitor.UseVisualStyleBackColor = false;
+            this.btnVisitor.Click += new System.EventHandler(this.btnVisitor_Click);
             // 
             // btnObserveInfo
             // 
@@ -514,15 +518,18 @@
             this.btnObserveInfo.Size = new System.Drawing.Size(34, 32);
             this.btnObserveInfo.TabIndex = 9;
             this.btnObserveInfo.UseVisualStyleBackColor = true;
+            this.btnObserveInfo.Click += new System.EventHandler(this.btnObserveInfo_Click);
             // 
             // btnObserve
             // 
+            this.btnObserve.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnObserve.Location = new System.Drawing.Point(168, 32);
             this.btnObserve.Name = "btnObserve";
             this.btnObserve.Size = new System.Drawing.Size(85, 45);
             this.btnObserve.TabIndex = 8;
             this.btnObserve.Text = "Observe";
-            this.btnObserve.UseVisualStyleBackColor = true;
+            this.btnObserve.UseVisualStyleBackColor = false;
+            this.btnObserve.Click += new System.EventHandler(this.btnObserve_Click);
             // 
             // btnCommandInfo
             // 
